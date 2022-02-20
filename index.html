@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+
+  <body>
+    <main>
+      <div class="geo-weather">
+        <div class="weather">Sunny</div>
+        <div>@</div>
+        <div class="location">Seoul</div>
+      </div>
+
+      <div class="clock">
+        <span class="hour"><p></p></span>
+        <span class="minute"><p></p></span>
+        <span class="second"><p></p></span>
+      </div>
+
+      <div class="login">
+        <form class="login-form">
+          <label for="name-input">Log in to use ToDo list: </label>
+          <input
+            id="name-input"
+            required="required"
+            type="text"
+            placeholder="Your name here"
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="welcome"></div>
+      </div>
+
+      <div class="todo-list">
+        <form class="todo-form">
+          <button type="submit">▲</button>
+          <input
+            class="todo-input"
+            required="required"
+            type="text"
+            placeholder="Type your todo"
+          />
+        </form>
+        <div class="todo-display"></div>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="src/clock.js"></script>
+    <script type="text/javascript" src="src/background.js"></script>
+    <script type="text/javascript" src="src/login.js"></script>
+    <script type="text/javascript" src="src/todo.js"></script>
+    <script type="text/javascript" src="src/weather.js"></script>
+  </body>
+</html>

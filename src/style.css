@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Bungee+Outline&family=Press+Start+2P&display=swap");
+
+body {
+  align-items: center;
+  background: #293241;
+  background-image: url("../img/bg1.jpg");
+  background-size: cover;
+  background-blend-mode: multiply;
+  z-index: -1000;
+}
+
+main {
+  width: 90vw;
+  min-height: 90vh;
+  display: flex;
+  align-items: end;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.todo-list {
+  width: 100%;
+  color: #ee6c4d;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: end;
+}
+
+.todo-list input[type="text"] {
+  background: #e0fbfc;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  font-family: "Bangers", cursive;
+  color: #3d5a80;
+}
+
+.todo-list button {
+  position: absolute;
+  background: #ee6c4d;
+  border: none;
+  font-family: "Bangers", cursive;
+  color: #293241;
+  font-size: 1rem;
+  border-radius: 1.2rem;
+  padding: 0.4rem;
+
+  margin: 0.2rem;
+  left: 92%;
+
+  cursor: pointer;
+}
+
+.todo-display {
+  padding-right: 1rem;
+  padding-bottom: 2rem;
+  color: #ee6c4d;
+  font-family: "Bangers", cursive;
+  font-size: 4rem;
+  line-height: 0.1;
+  text-align: end;
+
+  mix-blend-mode: difference;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: end;
+  gap: 1rem;
+  height: 4.2rem;
+}
+.todo-rm-button {
+  color: #e0fbfc;
+  cursor: pointer;
+}
+
+.geo-weather {
+  position: fixed;
+  color: #3d5a80;
+  font-size: 16rem;
+  line-height: 0.9;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* writing-mode: vertical-lr; */
+  /* text-orientation: upright; */
+  text-align: center;
+  font-family: "Bangers", cursive;
+
+  mix-blend-mode: exclusion;
+  z-index: -100;
+}
+
+.clock {
+  transform-origin: 50% 50%;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 24vw;
+  width: 24vw;
+  /* border: 0.6rem solid #98c1d9; */
+  border-radius: 100%;
+
+  font-family: "Bungee Outline", cursive;
+
+  /* mix-blend-mode: exclusion; */
+
+  z-index: -100;
+}
+
+.clock > span {
+  transform-origin: 50% 50%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  height: 3rem;
+  width: 3rem;
+  color: #98c1d9;
+  border-radius: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* mix-blend-mode: exclusion; */
+}
+
+.hour {
+  font-size: 6rem;
+  font-weight: bold;
+}
+.minute {
+  font-size: 4rem;
+  font-weight: bold;
+}
+.second {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.todo {
+  color: #3d5a80;
+}
+
+.login {
+  color: #ee6c4d;
+  font-family: "Bangers", cursive;
+  font-size: 2.6rem;
+  margin-left: 1rem;
+
+  mix-blend-mode: difference;
+}
+.login input[type="text"] {
+  background: #e0fbfc;
+  font-size: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding-left: 1rem;
+  font-family: "Bangers", cursive;
+  color: #3d5a80;
+}
+.login button {
+  background: #ee6c4d;
+  border: none;
+  font-family: "Bangers", cursive;
+  color: #293241;
+  font-size: 1.6rem;
+  border-radius: 0.6rem;
+  padding: 0.4rem;
+}
+
+.remove {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
